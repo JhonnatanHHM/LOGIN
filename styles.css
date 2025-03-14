@@ -1,64 +1,70 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    
-    body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: linear-gradient(120deg,#3498db,#8e44ad);
-    }
-    
-    .container{
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10x rgba(0,0,0,0.22);
-    overflow: hidden;
-    width: 100%;
-    max-width: 400px;
-    padding: 2rem;
-    }
-    
-    .form-container{
-    display: flex;
-    flex-direction: column;
-    }
-    
-    h1{
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #333;
-    }
-    
-    .form-group{
-    margin-bottom: 1.5rem;
-    }
-    
-    .form-group label{
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-    color: #333;
-    }
+/* Estilo para el ícono de mostrar/ocultar contraseña */
+.toggle-password {
+    position: absolute;   /* Posiciona el elemento de forma absoluta respecto a su contenedor */
+    right: 10px;          /* Lo aleja 10 píxeles del borde derecho del contenedor */
+    top: 10px;            /* Lo aleja 10 píxeles del borde superior del contenedor */
+    cursor: pointer;      /* Cambia el cursor a una mano cuando pasas sobre el ícono */
+    color: #666;          /* Color gris para el ícono o texto */
+}
 
-    .input-group{
-    position: relative;
-    }
-    
-    .form-group input{
-    width: 100px;
-    padding: 0.8rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1rem;
-    transition: border-color 0.3s;
-    }
-    
-    .form-group input:focus{
-    border-color: #3498db;
-    outline:none;
-    }
+/* Estilo para los mensajes de error en el formulario */
+.error-message {
+    color: #e74c3c;       /* Rojo vibrante que indica error o advertencia */
+    font-size: 0.85rem;   /* Tamaño de letra ligeramente más pequeño que el normal */
+    margin-top: 0.3rem;   /* Espacio superior entre el mensaje y el elemento anterior */
+    display: none;        /* Oculta el mensaje por defecto; se muestra solo cuando ocurre un error */
+}
+
+/* Contenedor para el enlace de '¿Olvidaste tu contraseña?' */
+.forgot-password {
+    text-align: right;        /* Alinea el contenido hacia la derecha */
+    margin-bottom: 1.5rem;    /* Espacio debajo del contenedor, separándolo del siguiente elemento */
+}
+
+/* Estilo para el enlace dentro de forgot-password */
+.forgot-password a {
+    color: #3498db;           /* Color azul vibrante para el enlace */
+    text-decoration: none;    /* Quita el subrayado por defecto del enlace */
+    font-size: 0.9rem;        /* Reduce el tamaño de la fuente del enlace */
+}
+
+/* Estilo cuando el usuario pasa el cursor sobre el enlace de forgot-password */
+.forgot-password a:hover {
+    text-decoration: underline; /* Agrega un subrayado al pasar el mouse sobre el enlace */
+}
+
+/* Estilo general para los botones del formulario */
+.btn {
+    background-color: #3498db;         /* Fondo azul brillante del botón */
+    color: white;                      /* Texto en color blanco dentro del botón */
+    border: none;                      /* Elimina cualquier borde por defecto del botón */
+    padding: 0.8rem;                   /* Espacio interno alrededor del contenido del botón */
+    border-radius: 4px;                /* Bordes ligeramente redondeados */
+    font-size: 1rem;                   /* Tamaño estándar de la fuente del botón */
+    cursor: pointer;                   /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+    width: 100%;                       /* Hace que el botón ocupe todo el ancho disponible */
+    transition: background-color 0.3s; /* Suaviza la transición de color de fondo en 0.3 segundos */
+}
+
+/* Estilo cuando el usuario pasa el mouse sobre el botón */
+.btn:hover {
+    background-color: #2980b9;         /* Cambia el color de fondo a un azul más oscuro */
+}
+
+/* Contenedor para el enlace de '¿No tienes cuenta? Regístrate' */
+.register-link {
+    text-align: center;         /* Centra horizontalmente el contenido */
+    margin-top: 1.5rem;         /* Agrega espacio superior para separarlo del contenido anterior */
+    font-size: 0.9rem;          /* Reduce ligeramente el tamaño del texto */
+}
+
+/* Estilo para el enlace dentro de register-link */
+.register-link a {
+    color: #3498db;             /* Color azul brillante para el enlace */
+    text-decoration: none;      /* Elimina el subrayado por defecto */
+}
+
+/* Estilos cuando el usuario pasa el cursor sobre el enlace de register-link */
+.register-link a:hover {
+    text-decoration: underline; /* Agregar un subrayado al pasar el mouse */
+}
