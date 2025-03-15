@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
- <head> <!--¿Por qué es necesario?: Contiene información importante sobre la página que no se ve directamente.
+
+<head> <!--¿Por qué es necesario?: Contiene información importante sobre la página que no se ve directamente.
     Función: Aquí se colocan cosas como el título, estilos y configuraciones. -->
     <meta charset="UTF-8"><!-- ¿Por qué es necesario?: Define el tipo de caracteres que se usan (letras, números, símbolos).
      Función: Evita que aparezcan caracteres raros en la página. -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- ¿Por qué es necesario?: Hace que la página se vea bien en móviles y tablets.
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ¿Por qué es necesario?: Hace que la página se vea bien en móviles y tablets.
     Función: Ajusta el tamaño de la página al dispositivo. -->
     <title>Inicio De Sesión</title>
     <link rel="stylesheet" href="/css/styles.css"><!-- ¿Por qué es necesario?: Conecta el archivo de estilos (CSS) con la página.
      Función: Hace que la página se vea bonita con colores, fuentes, etc. -->
 </head>
+
 <body><!-- ¿Por qué es necesario?: Aquí va todo lo que se ve en la página.
      Función: Contiene el contenido principal, como textos, imágenes y formularios. -->
     <div class="container"><!-- ¿Por qué es necesario?: Es una caja que organiza el contenido.
         Función: Ayuda a mantener todo en orden y centrado. -->
 
         <!-- Formulario De inicio de Sesión -->
-         <div id="login-form" class="form-container"><!-- ¿Por qué es necesario?: Es una caja específica para el formulario de inicio de sesión.
+        <div id="login-form" class="form-container"><!-- ¿Por qué es necesario?: Es una caja específica para el formulario de inicio de sesión.
             Función: Contiene todos los elementos del formulario. -->
             <h1>Inicio Sesión</h1>
             <form id="loginForm"><!-- ¿Por qué es necesario?: Es el formulario donde el usuario ingresa sus datos.
@@ -48,45 +50,46 @@
                 ¿No tine cuenta? <a href="#" id="registerLink">Regístrate</a>
 
             </div>
-         </div>
+        </div>
 
-        <!-- Formulario De inicio de Registro --> 
-          <div id="register-form" class="form-container" style="display: none;"><!-- ¿Por qué es necesario?: Es una caja para el formulario de registro, pero está oculta.
+        <!-- Formulario De inicio de Registro -->
+        <div id="register-form" class="form-container" style="display: none;"><!-- ¿Por qué es necesario?: Es una caja para el formulario de registro, pero está oculta.
                 Función: Se muestra cuando el usuario quiere registrarse. -->
-                <h1>Crear Cuenta</h1>
-                <form id="registerForm">
-                    <div class="form-group">
-                            <label for="reg-name">Nombre Completo</label>
-                            <input type="text" id="reg-name" name="name" required><!-- ¿Por qué es necesario?: Es un campo para que el usuario escriba su nombre completo.
+            <h1>Crear Cuenta</h1>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="reg-name">Nombre Completo</label>
+                    <input type="text" id="reg-name" name="name" required><!-- ¿Por qué es necesario?: Es un campo para que el usuario escriba su nombre completo.
                             Función: Recoge el nombre del usuario. -->
-                            <div class="error-message" id="name-error">Por favor ingresa su nombre</div>
-                    </div>
-                    <div class="form-group">
-                        <label for="reg-email">Correo electrónico</label>
-                        <input type="email" id="reg-email" name="email" required><!-- ¿Por qué es necesario?: Es un campo para que el usuario escriba su correo.
+                    <div class="error-message" id="name-error">Por favor ingresa su nombre</div>
+                </div>
+                <div class="form-group">
+                    <label for="reg-email">Correo electrónico</label>
+                    <input type="email" id="reg-email" name="email" required><!-- ¿Por qué es necesario?: Es un campo para que el usuario escriba su correo.
                         Función: Asegura que el usuario ingrese un correo válido. -->
-                        <div class="error-message" id="reg-email-error">Por favor ingrese un correro válido</div>---
-                    </div>
-                    <div class="form-group">
-                        <label for="reg-password">Contraseña</label>
-                        <div class="input-group">
-                            <input type="password" id="reg-password" name="password" required><!-- ¿Por qué es necesario?: Es un campo para que el usuario escriba su contraseña.
+                    <div class="error-message" id="reg-email-error">Por favor ingrese un correro válido</div>---
+                </div>
+                <div class="form-group">
+                    <label for="reg-password">Contraseña</label>
+                    <div class="input-group">
+                        <input type="password" id="reg-password" name="password" required><!-- ¿Por qué es necesario?: Es un campo para que el usuario escriba su contraseña.
                             Función: Oculta la contraseña mientras se escribe. -->
-                            <span class="toggle-password" id="regTogglePassword">👁️‍🗨️</span><!-- ¿Por qué es necesario?: Es un botón para mostrar u ocultar la contraseña.
+                        <span class="toggle-password" id="regTogglePassword">👁️‍🗨️</span><!-- ¿Por qué es necesario?: Es un botón para mostrar u ocultar la contraseña.
                             Función: Permite ver la contraseña si el usuario lo desea. -->
-                        </div>
-                        <div class="error-message" id="reg-email-error">La contraseña debe almenos tener 6 caracteres</div>
                     </div>
-                    <div class="form-group">
-                        <label for="reg-confirm-password">Confirmar contraseña</label><!-- ¿Por qué es necesario?: Es una etiqueta para el campo de confirmación de contraseña.
+                    <div class="error-message" id="reg-email-error">La contraseña debe almenos tener 6 caracteres</div>
+                </div>
+                <div class="form-group">
+                    <label for="reg-confirm-password">Confirmar contraseña</label><!-- ¿Por qué es necesario?: Es una etiqueta para el campo de confirmación de contraseña.
                         Función: Indica al usuario que debe repetir su contraseña. -->
 
-                    </div>
+                </div>
 
 
 
-                </form>
-          </div>
+            </form>
+        </div>
     </div>
 </body>
+
 </html>
