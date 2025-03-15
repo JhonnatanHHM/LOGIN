@@ -51,29 +51,35 @@
          </div>
 
         <!-- Formulario De inicio de Registro --> 
-          <div id="register-form" class="form-container" style="display: none;">
+          <div id="register-form" class="form-container" style="display: none;"><!-- ¿Por qué es necesario?: Es una caja para el formulario de registro, pero está oculta.
+                Función: Se muestra cuando el usuario quiere registrarse. -->
                 <h1>Crear Cuenta</h1>
                 <form id="registerForm">
                     <div class="form-group">
                             <label for="reg-name">Nombre Completo</label>
-                            <input type="text" id="reg-name" name="name" required>
+                            <input type="text" id="reg-name" name="name" required><!-- ¿Por qué es necesario?: Es un campo para que el usuario escriba su nombre completo.
+                            Función: Recoge el nombre del usuario. -->
                             <div class="error-message" id="name-error">Por favor ingresa su nombre</div>
                     </div>
                     <div class="form-group">
                         <label for="reg-email">Correo electrónico</label>
-                        <input type="email" id="reg-email" name="email" required>
+                        <input type="email" id="reg-email" name="email" required><!-- ¿Por qué es necesario?: Es un campo para que el usuario escriba su correo.
+                        Función: Asegura que el usuario ingrese un correo válido. -->
                         <div class="error-message" id="reg-email-error">Por favor ingrese un correro válido</div>---
                     </div>
                     <div class="form-group">
                         <label for="reg-password">Contraseña</label>
                         <div class="input-group">
-                            <input type="password" id="reg-password" name="password" required>
-                            <span class="toggle-password" id="regTogglePassword">👁️‍🗨️</span>
+                            <input type="password" id="reg-password" name="password" required><!-- ¿Por qué es necesario?: Es un campo para que el usuario escriba su contraseña.
+                            Función: Oculta la contraseña mientras se escribe. -->
+                            <span class="toggle-password" id="regTogglePassword">👁️‍🗨️</span><!-- ¿Por qué es necesario?: Es un botón para mostrar u ocultar la contraseña.
+                            Función: Permite ver la contraseña si el usuario lo desea. -->
                         </div>
                         <div class="error-message" id="reg-email-error">La contraseña debe almenos tener 6 caracteres</div>
                     </div>
                     <div class="form-group">
-                        <label for="reg-confirm-password">Confirmar contraseña</label>
+                        <label for="reg-confirm-password">Confirmar contraseña</label><!-- ¿Por qué es necesario?: Es una etiqueta para el campo de confirmación de contraseña.
+                        Función: Indica al usuario que debe repetir su contraseña. -->
 
                     </div>
 
