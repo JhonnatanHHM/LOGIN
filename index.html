@@ -23,11 +23,29 @@
                         <input type="password" id="password" name="password" required>
                         <span class="toggle-password" id="toggle-password">👁️‍🗨️</span>
                     </div>
-
+                    <div class="error-message" id="password-erro">La Contraseña Debe Tener Almenos 6 Caracteres</div>
                 </div>
+                <div class="forgot-password">
+                    <a href="#" id="forgot-passwordLink">¿Olvidaste tu contraseña?</a>
+                </div>
+                <button type="submit" class="btn">Ingresar</button>
+            </form>
+            <div class="register-link">
+                ¿No tine cuenta? <a href="#" id="registerLink">Regístrate</a>
 
+            </div>
          </div>
 
+        <!-- Formulario De inicio de Registro --> 
+          <div id="register-form" class="form-container" style="display: none;">
+             <h1>Crear Cuenta</h1>
+             <form id="registerForm">
+                 <div class="form-group">
+                    <label for="reg-name">Nombre Completo</label>
+
+                 </div>
+             </form>
+          </div>
     </div>
 </body>
 </html>
