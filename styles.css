@@ -1,64 +1,74 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    
-    body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: linear-gradient(120deg,#3498db,#8e44ad);
-    }
-    
-    .container{
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10x rgba(0,0,0,0.22);
-    overflow: hidden;
-    width: 100%;
-    max-width: 400px;
-    padding: 2rem;
-    }
-    
-    .form-container{
-    display: flex;
-    flex-direction: column;
-    }
-    
-    h1{
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #333;
-    }
-    
-    .form-group{
-    margin-bottom: 1.5rem;
-    }
-    
-    .form-group label{
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-    color: #333;
-    }
+/* Estilos globales para todos los elementos de la página */
+* {
+    margin: 0; /* Elimina los márgenes por defecto */
+    padding: 0; /* Elimina los rellenos por defecto */
+    box-sizing: border-box; /* Ajusta el tamaño de los elementos para que incluya borde y relleno */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define la fuente predeterminada */
+}
 
-    .input-group{
-    position: relative;
-    }
-    
-    .form-group input{
-    width: 100px;
-    padding: 0.8rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1rem;
-    transition: border-color 0.3s;
-    }
-    
-    .form-group input:focus{
-    border-color: #3498db;
-    outline:none;
-    }
+/* Estilos para el body */
+body {
+    display: flex; /* Usa el modelo de caja flexible (flexbox) para organizar los elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    min-height: 100vh; /* Asegura que el cuerpo tenga al menos el alto de la ventana */
+    background-color: linear-gradient(120deg, #3498db, #8e44ad); /* Aplica un degradado de color de fondo */
+}
+
+/* Contenedor principal */
+.container {
+    background-color: white; /* Fondo blanco para el contenedor */
+    border-radius: 10px; /* Bordes redondeados con un radio de 10px */
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); /* Sombras sutiles para dar efecto de profundidad */
+    overflow: hidden; /* Oculta cualquier contenido que se salga del contenedor */
+    width: 100%; /* Hace que el contenedor ocupe todo el ancho disponible */
+    max-width: 400px; /* Limita el ancho máximo del contenedor a 400px */
+    padding: 2rem; /* Añade un relleno interno de 2 rem (unidad relativa) */
+}
+
+/* Estilo para el contenedor de formulario */
+.form-container {
+    display: flex; /* Usa flexbox para organizar los elementos dentro del formulario */
+    flex-direction: column; /* Organiza los elementos en una columna */
+}
+
+/* Estilo para el título (h1) */
+h1 {
+    text-align: center; /* Centra el texto */
+    margin-bottom: 2rem; /* Añade un margen inferior de 2 rem */
+    color: #333; /* Define un color gris oscuro para el texto */
+}
+
+/* Estilo para cada grupo de formulario */
+.form-group {
+    margin-bottom: 1.5rem; /* Añade un margen inferior entre los grupos de formulario */
+}
+
+/* Estilo para las etiquetas de los campos del formulario */
+.form-group label {
+    display: block; /* Hace que la etiqueta sea un bloque para que ocupe toda la línea */
+    margin-bottom: 0.5rem; /* Añade un margen inferior pequeño */
+    font-weight: 600; /* Hace que el texto de la etiqueta sea semi-negrita */
+    color: #333; /* Define un color gris oscuro para el texto */
+}
+
+/* Contenedor para el input */
+.input-group {
+    position: relative; /* Establece la posición como relativa, útil para posicionamiento de elementos internos */
+}
+
+/* Estilo para los campos de texto del formulario (input) */
+.form-group input {
+    width: 100%; /* Hace que el campo de entrada ocupe el 100% del ancho del contenedor */
+    padding: 0.8rem; /* Añade relleno interno de 0.8 rem */
+    border: 1px solid #ddd; /* Define un borde gris claro */
+    border-radius: 4px; /* Bordes redondeados con un radio de 4px */
+    font-size: 1rem; /* Define el tamaño de la fuente */
+    transition: border-color 0.3s; /* Aplica una transición suave para el cambio de color del borde */
+}
+
+/* Estilo para los campos de texto cuando están en foco (seleccionados) */
+.form-group input:focus {
+    border-color: #3498db; /* Cambia el color del borde a azul cuando el campo está en foco */
+    outline: none; /* Elimina el contorno por defecto que algunos navegadores aplican al campo en foco */
+}
