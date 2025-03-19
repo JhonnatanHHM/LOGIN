@@ -1,5 +1,7 @@
 /* Centra el texto en los elementos que aplican esta regla */
-{text-align:center;
+.user-info {
+    display: none;
+    text-align:center;
 }
 
 /* Estiliza un contenedor que muestra el estado del usuario */
