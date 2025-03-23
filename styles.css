@@ -143,3 +143,65 @@ h1 {
 .register-link a:hover {
     text-decoration: underline; /* Agregar un subrayado al pasar el mouse */
 }
+/* Centra el texto en los elementos que aplican esta regla */
+.user-info {
+    display: none;
+    text-align:center;
+}
+
+/* Estiliza un contenedor que muestra el estado del usuario */
+.user-status {
+    display: flex; /* Usa flexbox para organizar elementos en línea */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    margin: 1rem 0; /* Agrega un margen arriba y abajo de 1rem */
+}
+
+/* Representa un punto de estado, posiblemente para indicar conexión */
+.status-dot {
+    width: 10px; /* Ancho del punto */
+    height: 10px; /* Altura del punto */
+    background-color: #2ecc71; /* Color verde (estado activo) */
+    border-radius: 50%; /* Lo hace completamente redondo */
+    margin-right: 8px; /* Agrega un margen a la derecha */
+}
+
+/* Botón de cierre de sesión */
+.logout-btn {
+    background-color: #e74c3c; /* Rojo para indicar una acción de salida */
+}
+
+/* Cambio de color cuando el botón de cierre de sesión está en "hover" */
+.logout-btn:hover {
+    background-color: #c0392b; /* Rojo más oscuro al pasar el cursor */
+}
+
+/* Estiliza un modal (ventana emergente) */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Se mantiene en la misma posición en la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    height: 100%; /* Ocupa todo el alto de la pantalla */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    z-index: 1000; /* Asegura que el modal aparezca por encima de otros elementos */
+}
+
+/* Contenedor interno del modal */
+.modal-content {
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 2rem; /* Espaciado interno */
+    width: 100%; /* Ocupa el ancho completo dentro de su contenedor */
+    max-width: 400px; /* Limita el ancho máximo */
+}
+
+/* Botón de cierre del modal */
+.close {
+    float: right; /* Lo coloca en la esquina superior derecha */
+    font-size: 1.5rem; /* Tamaño grande de la fuente */
+    cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
+}
