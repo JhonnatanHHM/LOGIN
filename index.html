@@ -1,0 +1,68 @@
+<!-- Campo de entrada para confirmar la contraseña -->
+<input type="password" id="reg-confirm-password" name="confirmPassword" required> 
+
+<!-- Elemento para alternar la visibilidad de la contraseña -->
+<span class="toggle-password" id="regToggleConfirmPassword"> </span> 
+
+<!-- Mensaje de error si las contraseñas no coinciden -->
+<div class="error-message" id="confirm-password-error">Las contraseñas no coinciden</div> 
+
+<!-- Botón de envío para registrar al usuario -->
+<button type="submit" class="btn">Registrarse</button> 
+
+<!-- Sección de enlace para iniciar sesión si ya tiene una cuenta -->
+<div class="register-link">
+    ¿Ya tienes cuenta? <a href="#" id="loginLink">Inicia sesión</a> 
+</div>
+
+<!-- Sección de información del usuario logueado -->
+<div id="user-info" class="user-info"> 
+
+    <!-- Mensaje de bienvenida con el nombre del usuario -->
+    <h1>Bienvenido <span id="userName"></span></h1> 
+
+    <!-- Indicador del estado del usuario -->
+    <div class="user-status"> 
+        <div class="status-dot"></div> <!-- Punto de estado visual -->
+        <p>Activo</p> <!-- Texto indicando que el usuario está activo -->
+    </div>
+
+    <!-- Botón para cerrar sesión -->
+    <button id="logoutBtn" class="btn logout-btn">Cerrar sesión</button> 
+
+</div>
+
+<!-- Modal para recuperación de contraseña -->
+<div id="recovery-modal" class="modal"> 
+
+    <div class="modal-content"> 
+
+        <!-- Botón para cerrar el modal -->
+        <span class="close" id="closeModal">&times;</span> 
+
+        <h2>Recuperar contraseña</h2> <!-- Título del modal -->
+
+        <!-- Formulario para recuperación de contraseña -->
+        <form id="recoveryForm"> 
+
+            <div class="form-group"> 
+
+                <!-- Etiqueta para el campo de correo -->
+                <label for="recovery-email">Correo electrónico</label> 
+
+                <!-- Campo de entrada para el correo electrónico (con error en la etiqueta) -->
+                <input type="email" id="recovery-email-error">Por favor ingrese un correo válido
+
+            </div> 
+
+            <!-- Botón para enviar el enlace de recuperación -->
+            <button type="submit" class="btn">Enviar enlace de recuperación</button>  
+
+        </form>
+
+    </div>
+
+</div>
+
+<!-- Enlace al archivo de JavaScript -->
+<script src="script.js"></script> 
